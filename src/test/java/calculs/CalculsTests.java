@@ -19,7 +19,7 @@ import org.junit.jupiter.params.provider.MethodSource;
  */
 class CalculsTests {
 
-	//private Calculs c1 = null;
+	private Calculs c1 = null;
 	/**
 	 * 
 	 * Initialise les valeurs avant chaque test
