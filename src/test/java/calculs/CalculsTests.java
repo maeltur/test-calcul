@@ -39,7 +39,7 @@ class CalculsTests {
 	 */
 	@Test
 	void testMultiplier() {
-		if (c1.multiplier()!=3){
+		if (c1.multiplier()!=2){
 			fail("Erreur dans la multiplication");
 		}
 	}
