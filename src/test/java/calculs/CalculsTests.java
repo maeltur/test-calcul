@@ -38,7 +38,7 @@ class CalculsTests {
                 Arguments.of(2,2,4),
                 Arguments.of(6,6,36),
                 Arguments.of(3,2,6),
-                Arguments.of(3,3,3)
+                Arguments.of(3,3,9)
             );
     }
     static Stream<Arguments> chargerJeuDeTestAdd() throws Throwable {
@@ -46,7 +46,7 @@ class CalculsTests {
             Arguments.of(2,2,4),
             Arguments.of(6,6,12),
             Arguments.of(3,2,5),
-            Arguments.of(3,3,3)
+            Arguments.of(3,3,6)
         );
 }
     static Stream<Arguments> chargerJeuDeTestDiv() throws Throwable {
@@ -54,7 +54,7 @@ class CalculsTests {
             Arguments.of(2,2,1),
             Arguments.of(6,6,1),
             Arguments.of(4,2,2),
-            Arguments.of(3,3,3)
+            Arguments.of(3,3,1)
         );
 }
     static Stream<Arguments> chargerJeuDeTestSou() throws Throwable {
@@ -62,7 +62,7 @@ class CalculsTests {
             Arguments.of(2,2,0),
             Arguments.of(6,6,0),
             Arguments.of(3,2,1),
-            Arguments.of(3,3,3)
+            Arguments.of(3,3,0)
         );
 }
 
@@ -78,7 +78,7 @@ class CalculsTests {
 	 * Test method for {@link calculs.Calculs#multiplier()}.
 	 */
 
-	@ParameterizedTest(name="Multiplication numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Multiplication numÃ©ro {index}: nombre1={0}, nombre2={1}, rÃ©sultat attendu = {2}")
     @MethodSource("chargerJeuDeTestMul")
     void testMultiplier(int firstNumber, int secondNumber, int expectedResult) {
             Calculs monCal = new Calculs(firstNumber, secondNumber);
@@ -88,7 +88,7 @@ class CalculsTests {
 	/**
 	 * Test method for {@link calculs.Calculs#additionner()}.
 	 */
-	@ParameterizedTest(name="Addition numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Addition numÃ©ro {index}: nombre1={0}, nombre2={1}, rÃ©sultat attendu = {2}")
     @MethodSource("chargerJeuDeTestAdd")
     void testAdditionner(int firstNumber, int secondNumber, int expectedResult) {
             Calculs monCal = new Calculs(firstNumber, secondNumber);
@@ -98,7 +98,7 @@ class CalculsTests {
 	 * Test method for {@link calculs.Calculs#diviser()}.
 	 */
 	
-	@ParameterizedTest(name="Division numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Division numÃ©ro {index}: nombre1={0}, nombre2={1}, rÃ©sultat attendu = {2}")
     @MethodSource("chargerJeuDeTestDiv")
     void testDiviser(int firstNumber, int secondNumber, int expectedResult) {
             Calculs monCal = new Calculs(firstNumber, secondNumber);
@@ -108,7 +108,7 @@ class CalculsTests {
 	/**
 	 * Test method for {@link calculs.Calculs#soustraire()}.
 	 */
-	@ParameterizedTest(name="Soustraction numéro {index}: nombre1={0}, nombre2={1}, résultat attendu = {2}")
+	@ParameterizedTest(name="Soustraction numÃ©ro {index}: nombre1={0}, nombre2={1}, rÃ©sultat attendu = {2}")
     @MethodSource("chargerJeuDeTestSou")
     void testSoustraire(int firstNumber, int secondNumber, int expectedResult) {
             Calculs monCal = new Calculs(firstNumber, secondNumber);
