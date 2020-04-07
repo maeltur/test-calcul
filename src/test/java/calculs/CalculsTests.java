@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
  * 
  */
 class CalculsTests {
-
+	assumeFalse(System.getProperty("os.name").contains("Linux"));
 	private Calculs c1 = null;
 	/**
 	 * 
