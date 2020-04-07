@@ -14,7 +14,6 @@ import org.junit.jupiter.api.Test;
  * 
  */
 class CalculsTests {
-	assumeFalse(System.getProperty("os.name").contains("Windows"));
 	private Calculs c1 = null;
 	/**
 	 * 
@@ -39,6 +38,7 @@ class CalculsTests {
 	 */
 	@Test
 	void testMultiplier() {
+		assumeFalse(System.getProperty("os.name").contains("Windows"));
 		if (c1.multiplier()!=2){
 			fail("Erreur dans la multiplication");
 		}
