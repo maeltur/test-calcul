@@ -2,7 +2,6 @@
  * 
  */
 package calculs;
-
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
